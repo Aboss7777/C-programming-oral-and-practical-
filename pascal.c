@@ -15,7 +15,7 @@ int main()
                		temp = 1;
         		else
                		temp = temp*(i-j+1)/j;
-               		printf(" %d  ", temp);
+               		printf("%4d", temp);
         	}	
                 printf("\n");
         } 
