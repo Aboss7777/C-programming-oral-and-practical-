@@ -75,3 +75,80 @@ void main()
 }
 
 /**************OUTPUT***********
+```
+1.Push
+2.Pop
+3.Display
+Enter your choice:
+1
+Enter elements to be pushed
+7
+
+1.Push
+2.Pop
+3.Display
+Enter your choice:
+1
+Enter elements to be pushed
+8
+
+1.Push
+2.Pop
+3.Display
+Enter your choice:
+1
+Enter elements to be pushed
+9
+
+1.Push
+2.Pop
+3.Display
+Enter your choice:
+1
+Stack is full
+
+1.Push
+2.Pop
+3.Display
+Enter your choice:
+3
+
+The Stack Elements are:
+
+9
+8
+7
+1.Push
+2.Pop
+3.Display
+Enter your choice:
+2
+The popped element is 9
+1.Push
+2.Pop
+3.Display
+Enter your choice:
+2
+The popped element is 8
+1.Push
+2.Pop
+3.Display
+Enter your choice:
+2
+The popped element is 7
+1.Push
+2.Pop
+3.Display
+Enter your choice:
+2
+Stack is empty
+The popped element is 0
+1.Push
+2.Pop
+3.Display
+Enter your choice:
+4
+Invalid choice Exiting program
+
+[Program finished]
+```********/
