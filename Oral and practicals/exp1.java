@@ -1,7 +1,7 @@
 import java.util.*;
 public class exp1{
 	public static void main(String[] args){
-		Scanner n=new Scanner(System.ln);
+		Scanner n=new Scanner(System.in);
 		System.out.print("Enter the Marks:");
 		int a=n.nextInt();
 		a=a/10;
