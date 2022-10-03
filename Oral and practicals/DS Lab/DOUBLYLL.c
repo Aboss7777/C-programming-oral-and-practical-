@@ -72,7 +72,7 @@ void beforeinsert(){
 	printf("\nEnter Value: \n");
 	scanf("%d",&val);
 	new_node -> data=val;
-	printf("\nInsert after which data: \n");
+	printf("\nInsert before which data: \n");
 	scanf("%d",&data1);
 	temp=head;
 	while(temp->data!=data1)
