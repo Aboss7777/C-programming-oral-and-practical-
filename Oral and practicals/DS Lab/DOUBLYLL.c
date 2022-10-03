@@ -6,7 +6,7 @@ struct node{
 	struct node *prev;
 };
 
-struct node *head;
+struct node *head=NULL;
 
 void begininsert(){
 	struct node *new_node;
