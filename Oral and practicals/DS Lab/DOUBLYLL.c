@@ -84,28 +84,34 @@ void beforeinsert(){
 }
 void begindelete(){
 	struct node *temp;
+	int a;
 	if(head==NULL) printf("Underflow\n");
 	else{
 		temp=head;
 		head=head->next;
 		head->prev=NULL;
+		a=temp->data;
 		free(temp);
+		printf("The number deleted is %d",a);
 	}
 }
 void end_delete(){
 	struct node *temp;
+	int a;
 	if(head==NULL) printf("Underflow\n");
 	else{
 		temp=head;
 		while(temp->next!=NULL)
 			temp=temp->next;
 		temp->prev->next=NULL;
+		a=temp->data;
 		free(temp);
+		printf("The number deleted is %d",a);
 	}
 }
 void anydelete(){
 	struct node *temp;
-	int data1;
+	int data1,a;
 	printf("Enter the data of node to be deleted: \n");
 	scanf("%d",&data1);
 	if(head==NULL) printf("Underflow");
@@ -115,7 +121,9 @@ void anydelete(){
 			temp=temp->next;
 		temp->prev->next=temp->next;
 		temp->next->prev=temp->prev;
+		a=temp->data;
 		free(temp);
+		printf("The number deleted is %d",a);
 	}
 }
 void display(){
@@ -128,7 +136,7 @@ void display(){
 	}
 }
 void main(){
-	int ch,j=0;
+	int ch,j=0,a;
 	while(j==0){
 		printf("\n1.begininsert\n2.endinsert\n3.afterinsert\n4.beforeinsert\n5.begindelete\n6.end_delete\n7.anydelete\n8.display\n");
 		printf("\nAny other number to exit");
@@ -154,7 +162,7 @@ void main(){
 				end_delete();
 				break;
 			case 7:
-				anydelete();
+			    anydelete();
 				break;
 			case 8:
 				display();
